@@ -1,0 +1,166 @@
+:root {
+  --bg-main: #f5f7fb;
+  --bg-card: #ffffff;
+  --border: #e5e7eb;
+
+  --text-main: #0f172a;
+  --text-muted: #6b7280;
+
+  --primary: #2563eb;
+
+  --leetcode: #00af9b;
+  --codechef: #7b5c3e;
+  --codeforces: #318ce7;
+  --gfg: #2f8d46;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--bg-main);
+  color: var(--text-main);
+}
+
+/* ---------- LAYOUT ---------- */
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.section {
+  margin-bottom: 48px;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+/* ---------- NAVBAR ---------- */
+
+.navbar {
+  background-color: var(--bg-card);
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 64px;
+}
+
+.logo {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.nav-links a {
+  margin-left: 24px;
+  text-decoration: none;
+  color: var(--text-main);
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  color: var(--primary);
+}
+
+/* ---------- HERO ---------- */
+
+.hero {
+  text-align: center;
+  margin: 40px 0 48px;
+}
+
+.hero h1 {
+  font-size: 2.25rem;
+  font-weight: 700;
+}
+
+.hero p {
+  margin-top: 8px;
+  color: var(--text-muted);
+}
+
+/* ---------- LOADING ---------- */
+
+.loading {
+  padding: 24px;
+  text-align: center;
+  color: var(--text-muted);
+}
+
+/* ---------- FOOTER ---------- */
+
+.footer {
+  text-align: center;
+  padding: 32px 0;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+/* ---------- RESPONSIVE ---------- */
+
+@media (max-width: 768px) {
+  .nav-links a {
+    margin-left: 12px;
+    font-size: 0.9rem;
+  }
+
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+}
+
+/* ---------- REGISTER BUTTONS ---------- */
+
+.register-btn {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 8px 14px;
+  background-color: var(--primary);
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.register-btn:hover {
+  opacity: 0.9;
+}
+
+.register-link {
+  display: inline-block;
+  margin-top: 8px;
+  font-size: 0.85rem;
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.register-link:hover {
+  text-decoration: underline;
+}
+
+.register-link.small {
+  font-size: 0.8rem;
+}

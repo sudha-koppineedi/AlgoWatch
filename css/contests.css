@@ -1,0 +1,131 @@
+/* ---------- SECTION SEPARATORS ---------- */
+
+.section {
+  padding-bottom: 32px;
+  border-bottom: 1px solid var(--border);
+}
+
+.section:last-of-type {
+  border-bottom: none;
+}
+
+/* ---------- NEXT CONTEST ---------- */
+
+.next-contest-card {
+  background: linear-gradient(135deg, #eef2ff, #ffffff);
+  border: 1px solid var(--border);
+  border-left: 6px solid var(--primary);
+  border-radius: 12px;
+  padding: 24px;
+}
+
+.next-contest-card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 8px;
+}
+
+.next-contest-meta {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  margin-bottom: 12px;
+}
+
+.next-contest-timer {
+  font-weight: 600;
+  color: var(--primary);
+}
+
+/* ---------- UPCOMING CONTESTS ---------- */
+
+.upcoming-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.upcoming-card {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 16px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.upcoming-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+}
+
+.upcoming-card h4 {
+  font-size: 1rem;
+  margin-bottom: 6px;
+}
+
+.upcoming-card .platform {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+
+.upcoming-card .time {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+/* ---------- PLATFORM COLORS ---------- */
+
+.leetcode { border-left: 4px solid var(--leetcode); }
+.codechef { border-left: 4px solid var(--codechef); }
+.codeforces { border-left: 4px solid var(--codeforces); }
+.gfg { border-left: 4px solid var(--gfg); }
+
+/* ---------- PLATFORMS SECTION ---------- */
+
+.platforms-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 24px;
+}
+
+.platform-card {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.platform-card h3 {
+  margin-bottom: 12px;
+  font-size: 1.1rem;
+}
+
+.platform-contests {
+  border-top: 1px solid var(--border);
+  padding-top: 12px;
+}
+
+.platform-item {
+  padding: 8px 0;
+  border-bottom: 1px dashed var(--border);
+  font-size: 0.9rem;
+}
+
+.platform-item:last-child {
+  border-bottom: none;
+}
+
+.platform-item span {
+  display: block;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+/* ---------- RESPONSIVE ---------- */
+
+@media (max-width: 768px) {
+  .upcoming-grid,
+  .platforms-grid {
+    grid-template-columns: 1fr;
+  }
+}

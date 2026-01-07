@@ -1,0 +1,98 @@
+/* ---------- CALENDAR ---------- */
+
+.calendar {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.calendar-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.calendar-controls button {
+  background: none;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 6px 10px;
+  cursor: pointer;
+}
+
+.calendar-controls button:hover {
+  background-color: #f1f5f9;
+}
+
+#current-month {
+  font-weight: 600;
+}
+
+/* ---------- GRID ---------- */
+
+.calendar-header,
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.calendar-header div {
+  padding: 10px 0;
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: 600;
+  border-bottom: 1px solid var(--border);
+  background-color: #f8fafc;
+}
+
+.calendar-date {
+  border-right: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  min-height: 90px;
+  padding: 6px;
+  font-size: 0.8rem;
+}
+
+.calendar-date:nth-child(7n) {
+  border-right: none;
+}
+
+.calendar-date.other-month {
+  background-color: #fafafa;
+  color: var(--text-muted);
+}
+
+.date-number {
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+/* ---------- EVENT DOTS ---------- */
+
+.date-events {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+}
+
+.dot.leetcode { background-color: var(--leetcode); }
+.dot.codechef { background-color: var(--codechef); }
+.dot.codeforces { background-color: var(--codeforces); }
+.dot.gfg { background-color: var(--gfg); }
+
+/* ---------- RESPONSIVE ---------- */
+
+@media (max-width: 768px) {
+  .calendar-date {
+    min-height: 70px;
+  }
+}
