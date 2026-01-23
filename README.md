@@ -60,9 +60,4 @@ This project was built to:
 
 
 
-## 📄 License
-
-This project is open-source and free to use for learning and personal projects.
-
----
 
