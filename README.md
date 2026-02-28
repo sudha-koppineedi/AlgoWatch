@@ -1,4 +1,5 @@
 # 🚀 AlgoWatch
+(CODEFORCES AND GFG LINKS GOT BROKEN, WILL FIX THEM SOON:) )
 
 **AlgoWatch** is a lightweight web application designed to help competitive programmers keep track of upcoming coding contests across popular platforms such as **LeetCode**, **CodeChef**, **Codeforces**, and **GeeksforGeeks**.
 
